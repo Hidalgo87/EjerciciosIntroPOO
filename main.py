@@ -1,2 +1,2 @@
 print("Hola Mundo")
-print("y entonces")
+print("Que se dice")
