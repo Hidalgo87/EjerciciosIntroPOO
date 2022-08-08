@@ -35,7 +35,7 @@ class Rectangulo:
     def calcular_perimetro(self, otro_punto):
         c1 = self.y - otro_punto.y
         c2 = self.x - otro_punto.x
-        perimetro = (c1*2)+(c2*2)
+        perimetro = ((math.fabs(c1))*2)+((math.fabs(c2))*2)
         return perimetro
 
     def calcular_area(self, otro_punto):
@@ -48,6 +48,6 @@ class Rectangulo:
         c1 = self.y - otro_punto.y
         c2 = self.x - otro_punto.x
         if c1 == c2:
-            print("El rectángulo es un cuadrado")
+            print("El rectangulo es un cuadrado")
         else:
-            print("El rectángulo NO es un cuadrado")
+            print("El rectangulo NO es un cuadrado")
