@@ -51,3 +51,27 @@ class Rectangulo:
             print("El rectangulo es un cuadrado")
         else:
             print("El rectangulo NO es un cuadrado")
+
+# Cree una clase Circulo que tenga las propiedades centro y radio,
+# las cuales se inicializan con parámetros en el constructor.
+# Defina métodos en la clase para calcular el área,
+# el perímetro e indicar si un punto pertenece al círculo o no.
+
+class Circulo:
+
+    def __init__(self, centro_x: int, centro_y: int, radio: int):
+        self.cx: int = centro_x
+        self.cy: int = centro_y
+        self.radio: int = radio
+
+    def calcular_area(self):
+        area = (self.radio**2)*math.pi
+        return area
+
+    def calcular_perimetro(self):
+        perimetro = 2*math.pi*self.radio
+        return perimetro
+
+    def comprobar_pertenece_circulo(self, punto_x: int, punto_y: int):
+
+
